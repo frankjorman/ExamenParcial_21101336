@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PrizesActivity">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logocopa" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="71dp"
+        android:layout_marginBottom="37dp"
+        android:text="PRIZES"
+        app:layout_constraintBottom_toTopOf="@+id/txtMontoDolares"
+        app:layout_constraintStart_toStartOf="@+id/txtMontoDolares"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <EditText
+        android:id="@+id/txtMontoDolares"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="34dp"
+        android:ems="10"
+        android:hint="Total amount in USD"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/btnCalcularPrizes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <Button
+        android:id="@+id/btnCalcularPrizes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="19dp"
+        android:text="CALCULATE"
+        app:layout_constraintBottom_toTopOf="@+id/lblPrimerPuesto"
+        app:layout_constraintEnd_toStartOf="@+id/lblPrimerPuesto"
+        app:layout_constraintStart_toStartOf="@+id/lblPrimerPuesto"
+        app:layout_constraintTop_toBottomOf="@+id/txtMontoDolares" />
+
+    <Button
+        android:id="@+id/btnGoMenuPrizes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:text="GO TO MENU"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/lblCuartoPuesto"
+        app:layout_constraintStart_toStartOf="@+id/lblCuartoPuesto"
+        app:layout_constraintTop_toBottomOf="@+id/lblCuartoPuesto" />
+
+    <TextView
+        android:id="@+id/lblPrimerPuesto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="19dp"
+        app:layout_constraintBottom_toTopOf="@+id/lblSegundoPuesto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalcularPrizes" />
+
+    <TextView
+        android:id="@+id/lblSegundoPuesto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/lblTercerPuesto"
+        app:layout_constraintEnd_toStartOf="@+id/lblPrimerPuesto"
+        app:layout_constraintStart_toStartOf="@+id/lblPrimerPuesto"
+        app:layout_constraintTop_toBottomOf="@+id/lblPrimerPuesto" />
+
+    <TextView
+        android:id="@+id/lblTercerPuesto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/lblCuartoPuesto"
+        app:layout_constraintEnd_toStartOf="@+id/lblSegundoPuesto"
+        app:layout_constraintStart_toStartOf="@+id/lblSegundoPuesto"
+        app:layout_constraintTop_toBottomOf="@+id/lblSegundoPuesto" />
+
+    <TextView
+        android:id="@+id/lblCuartoPuesto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="39dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnGoMenuPrizes"
+        app:layout_constraintEnd_toStartOf="@+id/lblTercerPuesto"
+        app:layout_constraintStart_toStartOf="@+id/lblTercerPuesto"
+        app:layout_constraintTop_toBottomOf="@+id/lblTercerPuesto" />
+</androidx.constraintlayout.widget.ConstraintLayout>
