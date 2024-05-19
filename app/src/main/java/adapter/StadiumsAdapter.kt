@@ -20,7 +20,7 @@ class StadiumsAdapter(private var lsStadiums: List<StadiumsModel>): RecyclerView
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val layoutInflater = LayoutInflater.from(parent.context)
-        return ViewHolder(layoutInflater.inflate(R.layout.item_teams,parent,false))
+        return ViewHolder(layoutInflater.inflate(R.layout.item_stadiums,parent,false))
     }
 
     override fun getItemCount(): Int {
